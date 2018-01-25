@@ -46,6 +46,18 @@ public class CacheConfiguration {
             cm.createCache(com.coviot.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(com.coviot.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.coviot.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
+            cm.createCache(com.coviot.domain.Region.class.getName(), jcacheConfiguration);
+            cm.createCache(com.coviot.domain.Country.class.getName(), jcacheConfiguration);
+            cm.createCache(com.coviot.domain.Location.class.getName(), jcacheConfiguration);
+            cm.createCache(com.coviot.domain.Department.class.getName(), jcacheConfiguration);
+            cm.createCache(com.coviot.domain.Department.class.getName() + ".employees", jcacheConfiguration);
+            cm.createCache(com.coviot.domain.Task.class.getName(), jcacheConfiguration);
+            cm.createCache(com.coviot.domain.Task.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.coviot.domain.Employee.class.getName(), jcacheConfiguration);
+            cm.createCache(com.coviot.domain.Employee.class.getName() + ".jobs", jcacheConfiguration);
+            cm.createCache(com.coviot.domain.Job.class.getName(), jcacheConfiguration);
+            cm.createCache(com.coviot.domain.Job.class.getName() + ".tasks", jcacheConfiguration);
+            cm.createCache(com.coviot.domain.JobHistory.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
